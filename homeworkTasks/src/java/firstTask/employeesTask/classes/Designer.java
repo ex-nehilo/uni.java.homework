@@ -11,19 +11,6 @@ public class Designer extends Employee {
     }
 
     @Override
-    public void introduceInfo() {
-        System.out.println("----------------------------------");
-        System.out.println("Employee ID: " + getId());
-        System.out.println("Employee name: " + getName());
-        System.out.println("Employee surname: " + getSurname());
-        System.out.println("Employee department : " + displayDepartment());
-        System.out.println("Employee salary : " + displayAndCalculateSalary());
-        System.out.println("----------------------------------");
-        System.out.println();
-    }
-
-    //ЗП + ПРЕМИЯ(КОЭФ*СТАЖ)
-    @Override
     public double displayAndCalculateSalary() {
         return getSalary() + COEFFICIENT_OF_BONUS_FOR_EXPERIENCE_YEARS * getExperienceYears();
     }
@@ -33,7 +20,6 @@ public class Designer extends Employee {
         return "Design";
     }
 
-    //prop
     private double getSalary() {
         return salary;
     }

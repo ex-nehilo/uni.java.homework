@@ -1,6 +1,5 @@
 package firstTask.employeesTask.classes;
 
-//Programmer
 public class Developer extends Employee {
     private double salary;
     private final int COEFFICIENT_OF_BONUS_FOR_EXPERIENCE_YEARS = 4000;
@@ -11,19 +10,6 @@ public class Developer extends Employee {
         this.salary = salary;
     }
 
-    @Override
-    public void introduceInfo() {
-        System.out.println("----------------------------------");
-        System.out.println("Employee ID: " + getId());
-        System.out.println("Employee name: " + getName());
-        System.out.println("Employee surname: " + getSurname());
-        System.out.println("Employee department : " + displayDepartment());
-        System.out.println("Employee salary : " + displayAndCalculateSalary());
-        System.out.println("----------------------------------");
-        System.out.println();
-    }
-
-    //ЗП + ПРЕМИЯ(КОЭФ*СТАЖ)
     @Override
     public double displayAndCalculateSalary() {
         return getSalary() + COEFFICIENT_OF_BONUS_FOR_EXPERIENCE_YEARS * getExperienceYears();

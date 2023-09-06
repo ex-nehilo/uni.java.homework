@@ -14,6 +14,7 @@ public class Main {
             Employee emp2 = new Designer(2, "Antony", "Blinken", 12, 10000);
             emp1.introduceInfo();
             emp2.introduceInfo();
+
         } catch (SalaryException e)
         {
             System.err.println(e.getMessage());
