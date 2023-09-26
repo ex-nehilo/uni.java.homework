@@ -11,7 +11,7 @@ public class Main {
         try
         {
             Employee emp1 = new Developer(1, "Roman", "Bakin", 3, 40000);
-            Employee emp2 = new Designer(2, "Antony", "Blinken", 12, 10000);
+            Employee emp2 = new Designer(2, "Bakin", "Roman", 12, 10000);
             emp1.introduceInfo();
             emp2.introduceInfo();
         } catch (SalaryException e)
